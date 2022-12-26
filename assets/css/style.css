@@ -229,3 +229,19 @@ footer .container{
 
 
 
+
+/*RESPONSIVE PARA TAMAÑOS DE DESKTOP*/
+@media (min-width: 720px){
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+}
+
+
+
