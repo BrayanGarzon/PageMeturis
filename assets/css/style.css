@@ -232,6 +232,13 @@ footer .container{
 
 /*RESPONSIVE PARA TAMAÑOS DE DESKTOP*/
 @media (min-width: 720px){
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+
     header .container{
         flex-direction: row;
         justify-content: space-between;
@@ -240,6 +247,34 @@ footer .container{
         flex-direction: row;
         padding-bottom: 0;
         padding-right: 20px;
+    }
+
+
+    #somos-proya .container{ /*contenedor padre*/
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #somos-proya .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+
+
+    #somos-proya .img-container{ /*seccion comos proya con imagen a la derecha*/
+        background-image:  url('/assets/img/media/somos-proya.jpg');
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
     }
 }
 
