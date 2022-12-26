@@ -2,6 +2,9 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 
 body{
@@ -39,6 +42,9 @@ button:hover{
     max-width: 1400px;
     margin: auto;
 }
+
+.color-acento{color: blueviolet;}
+
 
 header{
     background-color: rgb(245, 245, 245);
@@ -100,4 +106,69 @@ header a:hover{
 #hero h1{
     color: white;
 }
+#somos-proya .container{
+    text-align: center;
+    padding: 200px 12px;
+}
 
+
+/*NUESTROS PROGRAMAS*/
+#nuestros-programas{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#nuestros-programas .container{
+    padding: 90px 12px;   /*espacio que existe entre las cartas y la margen negra*/
+}
+
+#nuestros-programas h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#nuestros-programas p{
+    display: none;
+}
+
+#nuestros-programas .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+
+/*como son 3 cards con el fisrt child se selecciona el primero*/
+.carta:first-child{ 
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )                                       /*como colocar filtro a la imagen*/
+    ,url(../img/media/front-end.jpg); 
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )                                       /*como colocar filtro a la imagen*/
+    ,url(../img/media/full-stack.jpg); 
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )                                       /*como colocar filtro a la imagen*/
+    ,url(../img/media/python.jpg);
+}
+
+
+
+/*SECTION CARACTERISTICAS*/
